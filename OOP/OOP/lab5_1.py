@@ -5,7 +5,7 @@ class Point:
         self.x = xcoord
         self.y = ycoord
     def display(self):
-        print "(" + str(self.x) + ", " + str(self.y) + ")"
+        print("(" + str(self.x) + ", " + str(self.y) + ")")
     def length(self, point):
         return math.sqrt(((point.y-self.y) ** 2) + ((point.x-self.x) ** 2))
 
@@ -26,4 +26,4 @@ p2 = Point(3,4)
 p3 = Point(5,6)
 t1 = Triangle(p1,p2,p3)
 t1.display()
-print t1.perimeter()
+print(t1.perimeter())
