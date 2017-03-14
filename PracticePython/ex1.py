@@ -1,14 +1,9 @@
 import datetime
 
-def calculated100YearsFrom(year, age):
-    return year + (100-age)
-
 name = raw_input("Enter Name: ")
 age = int(raw_input("Enter Current Age: "))
 
-out_msg = name + "!!\nIn " + str(calculated100YearsFrom(datetime.datetime.now().year, age)) + " years you will be 100 years old."
-print out_msg
+out_msg = name + "!!\nIn the year " + str(datetime.datetime.now().year + (100-age)) + " you will be 100 years old.\n"
+print out_msg[0:-1]
 num = int(raw_input("Enter Repeat Count: "))
-for i in range(num):
-    print out_msg
-    
+print num*out_msg
